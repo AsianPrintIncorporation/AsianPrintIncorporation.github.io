@@ -1,64 +1,92 @@
-<style>
-  button {
-    border: dashed;
-    height: 40px;
-    /* Keeps the smooth 0.75-second shadow animation bundled here */
-    transition: box-shadow 0.75s ease;
-  }
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Corrected external link alignment -->
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Declaring the variables right inside the root ensures GitHub can read them */
+    :root {
+      --Fcolor: #000000;
+      --Scolor: #f0ffff;
+    }
 
-  /* Houses the mouse hover shadow rule entirely within the header block */
-  .nav_buttons:hover {
-    box-shadow: 10px 10px 10px rgb(150, 150, 175);
-  }
+    /* Kills your scrolling track glitch instantly and forces the dark theme background */
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: var(--Fcolor);
+    }
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding-bottom: 0px;
-    border-bottom: 3px dashed azure;
-  }
+    header { 
+      display: flex; 
+      justify-content: space-between; 
+      position: relative; 
+      padding-bottom: 0px; 
+      border-bottom: 3px dashed var(--Scolor); 
+      background-color: var(--Fcolor);
+    } 
 
-  .title {
-    margin-bottom: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    font-size: 35px;
-    border: solid;
-    padding: 7px;
-    font-weight: 900;
-    height: 40px;
-    width: 450px;
-    align-items: center;
-  }
+    .title { 
+      margin-top: 5px;
+      margin-bottom: 25px; 
+      margin-left: 25px; 
+      margin-right: 25px; 
+      font-size: 35px; 
+      border: solid; 
+      border-color: var(--Scolor);
+      color: var(--Scolor);
+      font-family: 'Times New Roman', Times, serif;
+      padding: 7px; 
+      font-weight: 900; 
+      height: 40px; 
+      width: 450px; 
+      display: flex;
+      align-items: center; 
+    } 
 
-  .nav_buttons_div {
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    gap: 40px;
-    height: 50px;
-  }
+    .nav_buttons_div { 
+      margin-right: auto; 
+      margin-left: auto; 
+      display: flex; 
+      gap: 40px; 
+      height: 50px; 
+    } 
 
-  .nav_buttons {
-    height: 50px;
-    font-size: 40px;
-    cursor: pointer;
-    font-family: 'Times New Roman', Times, serif;
-  }
+    .nav_buttons_div a { 
+      display: contents; 
+    } 
 
-  .nav_buttons_div a {
-    display: contents;
-  }
-</style>
-<link rel="stylesheet" href="style.css">
+    button.nav_buttons { 
+      height: 50px; 
+      font-size: 40px; 
+      cursor: pointer; 
+      border: dashed;
+      border-color: var(--Scolor);
+      background-color: var(--Fcolor);
+      color: var(--Scolor);
+      font-family: 'Times New Roman', Times, serif; /* Formats your font tightly for live web rendering */
+      transition: box-shadow 0.75s ease; 
+    } 
 
-<header>
-  <h1 class="title">Asian Print Incorporation</h1>
-  <div class="nav_buttons_div" style="border: none;">
-    <!-- Targets the parent window to change the full webpage layout instantly -->
-    <a href="index.html" target="_parent"><button class="nav_buttons">Home</button></a>
-    <a href="members.html" target="_parent"><button class="nav_buttons">Members</button></a>
-    <a href="sneakpeek.html" target="_parent"><button class="nav_buttons">Sneak Peaks</button></a>
-  </div>
-</header>
+    /* Houses the mouse hover shadow rule entirely within the header block */ 
+    .nav_buttons:hover { 
+      box-shadow: 10px 10px 10px rgb(150, 150, 175); 
+    } 
+  </style>
+</head>
+<body>
+
+  <header> 
+    <h1 class="title">Asian Print Incorporation</h1> 
+    <div class="nav_buttons_div" style="border: none;"> 
+      <!-- Targets the parent window to change the full webpage layout instantly --> 
+      <a href="index.html" target="_parent"><button class="nav_buttons">Home</button></a> 
+      <a href="members.html" target="_parent"><button class="nav_buttons">Members</button></a> 
+      <a href="sneakpeek.html" target="_parent"><button class="nav_buttons">Sneak Peaks</button></a> 
+    </div> 
+  </header>
+
+</body>
+</html>
