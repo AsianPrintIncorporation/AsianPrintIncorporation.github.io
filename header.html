@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="style.css">
+<style>
+  button {
+    border: dashed;
+    height: 40px;
+    /* Keeps the smooth 0.75-second shadow animation bundled here */
+    transition: box-shadow 0.75s ease;
+  }
+
+  /* Houses the mouse hover shadow rule entirely within the header block */
+  .nav_buttons:hover {
+    box-shadow: 10px 10px 10px rgb(150, 150, 175);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 0px;
+    border-bottom: 3px dashed azure;
+  }
+
+  .title {
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 35px;
+    border: solid;
+    padding: 7px;
+    font-weight: 900;
+    height: 40px;
+    width: 450px;
+    align-items: center;
+  }
+
+  .nav_buttons_div {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
+    height: 50px;
+  }
+
+  .nav_buttons {
+    height: 50px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .nav_buttons_div a {
+    display: contents;
+  }
+</style>
+<link rel="stylesheet" scr="style.css">
+
+<header>
+  <h1 class="title">Asian Print Incorporation</h1>
+  <div class="nav_buttons_div" style="border: none;">
+    <!-- Targets the parent window to change the full webpage layout instantly -->
+    <a href="index.html" target="_parent"><button class="nav_buttons">Home</button></a>
+    <a href="members.html" target="_parent"><button class="nav_buttons">Members</button></a>
+    <a href="sneakpeek.html" target="_parent"><button class="nav_buttons">Sneak Peaks</button></a>
+  </div>
+</header>

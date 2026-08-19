@@ -1,0 +1,53 @@
+:root{
+  --Fcolor: #000000;
+  --Scolor: #f0ffff;
+}
+
+body {
+  background-color: var(--Fcolor);
+  font-family: "Times New Roman", Times, serif;
+  color: var(--Scolor);
+  border-color: var(--Scolor);
+}
+
+div {
+  border: solid;
+  text-align: center;
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+article {
+  border: solid;
+  border-color: var(--Scolor);
+  text-align: center;
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+a{
+  color: var(--Scolor);
+}
+
+h1{
+  font-size: 100px; text-align: center; margin-bottom: 0px; color: var(--Scolor)
+}
+
+h2{
+  font-size: 75px; text-align: center; margin-bottom: 0px;
+}
+
+p{
+  font-size: 25px;
+}
+
+button{
+  background-color: var(--Fcolor);
+  color: var(--Scolor);
+}
