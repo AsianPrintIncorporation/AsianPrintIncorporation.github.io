@@ -33,6 +33,7 @@ article {
 
 a{
   color: var(--Scolor);
+  text-align: center;
 }
 
 h1{
@@ -45,9 +46,14 @@ h2{
 
 p{
   font-size: 25px;
+  text-align: center;
 }
 
 button{
   background-color: var(--Fcolor);
   color: var(--Scolor);
+}
+
+img{
+  text-align: center;
 }
